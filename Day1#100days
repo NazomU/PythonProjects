@@ -1,0 +1,48 @@
+Print("Hello World")
+
+-- using spyder
+print("I " + " am" + " Naz")
+
+-- using jupyter notebook
+print("Hello " + " Nazom")
+
+--Using input statement. 
+input("What is your name?")
+
+print("Hello " + input("What is your name?") )
+-- Result
+What is your name?Chinazom
+Hello Chinazom
+
+--Len() function: used to print out the length of characters
+print(len(input("what is  your name?") ) )
+-- Result
+What is your name? Chinazom
+8
+
+-- working with variables uding jupyter/spyder note book
+name = input("what is your name")
+length = len(name)
+print(length)
+
+
+PROJECT
+CREATING A BAND NAME
+#1. Create a greeting for your program.
+print("welcome to my band name generator")
+#2. Ask the user for the city that they grew up in.
+city = input("which city did you grow up in?\n")
+#3. Ask the user for the name of a pet.
+pet = input("what is the name of  your pet?\n")
+#4. Combine the name of their city and pet and show them their band name.
+print("Your band name could be " + city + " " + pet)
+
+RUN/RESULT
+welcome to my band name generator
+
+which city did you grow up in?
+Lagos
+
+what is the name of  your pet?
+Goal
+Your band name could be Lagos Goal
