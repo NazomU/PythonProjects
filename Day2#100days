@@ -1,0 +1,24 @@
+#Data Types
+num_char = len(input("what is your name?\n"))
+new_num_char = str(num_char)
+print("your name is " + new_num_char + " characters long")
+
+#write a code to enter two digit numbers and the result should be the sum of the two digits
+Ask_a_two_digit_number = input("Write a two digit number: ")
+Num_char = (int(Ask_a_two_digit_number[0]) + int(Ask_a_two_digit_number[1]))
+print(Num_char)
+
+#Write a code that calculates the body mass index(BMI) from a users weight and height
+BMI = Weight(kg)/Height(m)
+Height = input("Enter your height in m: ")
+Weight = input("Enter your weight in kg: ")
+BMI = int(Weight) / float(Height) ** 2
+print(BMI)
+#To convert to integer from float
+BMI_as_integer = int(BMI)
+print(BMI_as_integer)
+
+
+#Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
+It will take your current age as the input and output a message with our time left in this format: You have x days, y weeks, and z months left.
+Where x, y and z are replaced with the actual calculated numbers.
