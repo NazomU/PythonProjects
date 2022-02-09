@@ -22,3 +22,33 @@ print(BMI_as_integer)
 #Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
 It will take your current age as the input and output a message with our time left in this format: You have x days, y weeks, and z months left.
 Where x, y and z are replaced with the actual calculated numbers.
+age = input("What is your current age?\n")
+age_as_int =  int(age)
+No_of_years_you_have_left = 90 - age_as_int
+No_of_days_remaning = No_of_years_you_have_left * 365
+No_of_weeks_left = No_of_years_you_have_left *52
+No_of_months_left = No_of_years_you_have_left * 12
+
+message = f"You have {No_of_days_remaning} days, {No_of_weeks_left} weeks, and {No_of_months_left} months left, and {No_of_years_you_have_left} years"
+print(message)
+
+
+#Building a Tip Calculator
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places 
+-- information from the user
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people to split the bill?"))
+-- calculating thetip
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / people
+final_amount = round(bill_per_person, 2)
+
+print(f"Each person should pay: ${final_amount}")
+
+
