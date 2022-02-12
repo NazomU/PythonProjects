@@ -83,29 +83,25 @@ print(f"Your final bill is ${bill}")
 #Treasue Island Program Code
 print("Welcome to treasure Island. Your mission is to find the treasure.")
 print("Your mission is to find the treasure.")
-Direction = input("What direction do you want to go? Type left or right?\n").lower()
-if Direction == "right":
- print("Oops! you fell into a hole! Game over")
-elif Direction == "left":
-    print("You are at a lake. Do you want to swim or wait for a boat?.Choose to swim or wait\n")
 
-Direction2 = input("Do you want to swim or wait?\n").lower()
-if Direction2 == "swim":
-    #Game ends
-    print("Oops! You are attacked by a tout! Game over")
-elif Direction2 == "wait":
-    #Game continues
-    print("You have arrived at an Island.Choose a door to continue?\n")
-    
-Direction3 = input("Which door colour do you want to open to win?\n")
-lower_case_name = Direction
-    print("Oops! You are out! Game over")3.lower()
-if Direction3 == "red":
-    print("You are burned by fire. Game over")
-elif Direction3 == "blue":
-    print("You have been eaten by beasts. Game over!")
-elif Direction3 == "yellow":
-    print("You win! You are a champion")
+Direction = input("What direction do you want to go? Type left or right?\n").lower()
+
+if Direction == "left":
+    print("You are at a lake. Do you want to swim or wait for a boat?.Choose to swim or wait\n")
+    Direction2 = input("Do you want to swim or wait?\n").lower()
+    if Direction2 == "wait":
+        print("You have arrived at an Island.Choose a door to continue?\n")
+    Direction3 = input("Which door colour do you want to open to win?\n").lower()
+    if Direction3 == "red":
+        print("You are burned by fire. Game over")
+    elif Direction3 == "blue":
+        print("You have been eaten by beasts. Game over!")
+    elif Direction3 == "yellow":
+        print("You win! You have the found the treasure.You are a champion!")
+    else:
+        print("Game over")
 else:
+    print("Oops! You are attacked by a tout! Game over")
+
     
  
