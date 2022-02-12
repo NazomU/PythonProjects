@@ -1,0 +1,111 @@
+Using Spyder
+number = int(input("Which number do you want to check? "))
+if number % 2 == 0:
+    print("This is an even number")
+else:
+    print("This is an odd number")
+    
+ 
+Using Jupyter Notebook
+#Write a code that works out whether if a given year is a leap year.
+#On every year that is evenly divisible by 4, except every year that is divisible by 100, unless the year is also divisible by 400
+print("This is a leap year calculator")
+Year = int(input("Type in a year\n"))
+if Year % 4 == 0 :
+    print("The year is a leap year")
+elif Year % 100 == 0:
+    print("This is a leap year")
+elif  Year % 400 == 0:
+    print("This is a leap year")
+else:
+    print("This is not a leap year")
+    
+    
+ 
+ 
+ #Roller coaster access
+    print("Welcome to the rollercoaster") 
+height = int(input("What is your height in cm?")) 
+if height >= 120: 
+    print("You can ride the rollercoaster") 
+age = int(input("what's your age?")) 
+if age < 12:
+    bill = 5
+    print("Child tickets are $5.")
+elif age <= 18:
+    bill = 7
+    print("youth tickets are $7.") 
+else: 
+    bill = 12
+    print("Adult tickets are $12.") 
+ 
+wants_photo = input("Do you want a photo taken? Y or N. ") 
+if wants_photo == "Y": 
+    bill += 3 
+    
+    print(f"Your final bill is {bill}") 
+
+else:
+    print("Sorry you have to grow taller")
+    
+    
+    
+  #This code is an automatic pizza program
+  print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L \n")
+bill = 0
+if size == "S":
+    bill += 15
+    print("Small Pizza is $15")
+elif size == "M":
+    bill += 20
+    print("Medium Pizza is $20")
+else: 
+    size == "L"
+    bill += 25
+    print("Large Pizza is $25")
+    
+add_pepperoni = input("Do you want pepperoni? Y or N \n")
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+
+extra_cheese = input("Do you want extra cheese? Y or N \n")
+if extra_cheese == "Y":
+    bill +=1
+
+print(f"Your final bill is ${bill}")
+
+
+
+#Treasue Island Program Code
+print("Welcome to treasure Island. Your mission is to find the treasure.")
+print("Your mission is to find the treasure.")
+Direction = input("What direction do you want to go? Type left or right?\n").lower()
+if Direction == "right":
+ print("Oops! you fell into a hole! Game over")
+elif Direction == "left":
+    print("You are at a lake. Do you want to swim or wait for a boat?.Choose to swim or wait\n")
+
+Direction2 = input("Do you want to swim or wait?\n").lower()
+if Direction2 == "swim":
+    #Game ends
+    print("Oops! You are attacked by a tout! Game over")
+elif Direction2 == "wait":
+    #Game continues
+    print("You have arrived at an Island.Choose a door to continue?\n")
+    
+Direction3 = input("Which door colour do you want to open to win?\n")
+lower_case_name = Direction
+    print("Oops! You are out! Game over")3.lower()
+if Direction3 == "red":
+    print("You are burned by fire. Game over")
+elif Direction3 == "blue":
+    print("You have been eaten by beasts. Game over!")
+elif Direction3 == "yellow":
+    print("You win! You are a champion")
+else:
+    
+ 
